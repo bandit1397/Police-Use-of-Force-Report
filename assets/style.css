@@ -222,6 +222,22 @@ details.more > .law { margin: 0 10px 10px; }
 .example .ex-label { font-weight: 800; color: var(--muted); font-size: .82rem; margin: 10px 0 2px; }
 .example .mk { color: var(--muted); }
 
+/* 보고서 서식 */
+.report { border: 1.5px solid var(--line); border-radius: 10px; overflow: hidden; margin: 10px 0; font-size: .93rem; }
+.rp-title { background: var(--brand); color: #fff; font-weight: 800; padding: 9px 12px; }
+.rp-sec { background: var(--accent-soft); color: var(--accent); font-weight: 800; padding: 8px 12px; border-top: 1px solid var(--line); }
+.rp-row { display: grid; grid-template-columns: minmax(0, 1fr); border-top: 1px solid var(--line); }
+.rp-k { background: var(--surface-2); font-weight: 700; padding: 7px 12px; font-size: .9rem; }
+.rp-v { padding: 2px 12px 4px; }
+.rp-v .list { margin: 4px 0; }
+.rp-v .li { margin: 5px 0; }
+.rp-v .mk { color: var(--muted); }
+@media (min-width: 600px) {
+  .rp-row { grid-template-columns: 11em minmax(0, 1fr); }
+  .rp-k { border-right: 1px solid var(--line); }
+}
+.ph { color: var(--accent); background: var(--accent-soft); border: 1px dashed var(--accent); border-radius: 4px; padding: 0 4px; font-size: .9em; }
+
 /* 이전·다음 */
 .pager { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
 .pager a {

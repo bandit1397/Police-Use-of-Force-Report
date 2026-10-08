@@ -34,6 +34,13 @@
           }).join('') + '</div>';
         case 'example':
           return '<div class="example"><div class="ex-title">' + b[1] + '</div><div class="ex-body">' + b[2] + '</div></div>';
+        case 'report':
+          return '<div class="report"><div class="rp-title">' + b[1] + '</div>' + b[2].map(function (sec) {
+            return '<div class="rp-sec">' + sec[0] + '</div>' + sec[1].map(function (it) {
+              return '<div class="rp-row"><div class="rp-k">' + it[0] + '</div><div class="rp-v">' +
+                list(it[1].map(function (ln) { return typeof ln === 'string' ? ['○', ln] : ln; })) + '</div></div>';
+            }).join('');
+          }).join('') + '</div>';
         case 'more':
           return '<details class="more"><summary>' + b[1] + '</summary>' + blocks(b[2]) + '</details>';
       }
