@@ -1,0 +1,12 @@
+{
+  "name": "경찰 물리력 사용 매뉴얼",
+  "short_name": "물리력 매뉴얼",
+  "description": "대상자 행위별 물리력 대응, 사용 후 조치, 사용보고서 작성요령 현장 참고 매뉴얼",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f6f9",
+  "theme_color": "#1d3b6e",
+  "lang": "ko",
+  "icons": [{ "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
